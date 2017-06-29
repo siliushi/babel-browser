@@ -2,7 +2,7 @@
   "name": "babel-browser-king",
   "version": "1.0.0",
   "description": "babel-browser",
-  "main": "index.js",
+  "main": "babel-browser.min.js",
   "directories": {
     "test": "test"
   },
