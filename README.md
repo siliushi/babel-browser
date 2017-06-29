@@ -1,0 +1,2 @@
+# babel-require
+babel-require
