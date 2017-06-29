@@ -11,7 +11,7 @@ npm install babel-browser-king
       
 # how to use?     
 ```
-<script src="babel-browser.min.js"></script>   
+<script src="https://unpkg.com/babel-browser-king@1.0.2/babel-browser.min.js"></script>   
 <script>   
 	require.config({   
 		path: ''  //es6 root   
