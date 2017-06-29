@@ -1,0 +1,31 @@
+{
+  "name": "babel-browser",
+  "version": "1.0.0",
+  "description": "babel-browser",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baixuexiyang/babel-browser.git"
+  },
+  "dependencies": {
+    "gulp": "^3.8.7",
+    "gulp-clean": "^0.3.1",
+    "gulp-header": "^1.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.0",
+    "gulp-util": "^3.0.2",
+    "moment": "^2.16.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baixuexiyang/babel-browser/issues"
+  },
+  "homepage": "https://github.com/baixuexiyang/babel-browser#readme"
+}
