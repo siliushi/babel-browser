@@ -4,7 +4,8 @@
    
 How do you run ES6 directly in the development environment(browser)? ES6 has been around for a while now, most of it is running in the node.js environment, or running through Babel compilation. Babel-browser primarily enables users to directly run ES6 syntax on their browsers.
         
-      
+[demo](https://github.com/baixuexiyang/es6-demo.git)   
+        
 ```  
 npm install babel-browser-king  
 ```   
