@@ -17,11 +17,17 @@ npm install babel-browser-king
 		path: ''  //es6 root   
 	});   
 </script>   
+<script type="text/babel">   
+	let test = 1;   
+</script>   
+<script type="text/babel" src="test.js"></script>    
 ```    
     
 # attention   
 require或者import加载文件只能是相对地址      
+script标签的type属性值只能是text/babel    
    
    
-require or import can only load files relative addresses   
-   
+require or import can only load files relative addresses     
+The type attribute value of the script tag is only text/babel  
+      
