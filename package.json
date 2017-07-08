@@ -1,6 +1,6 @@
 {
   "name": "babel-browser-king",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "babel-browser",
   "main": "babel-browser.min.js",
   "directories": {

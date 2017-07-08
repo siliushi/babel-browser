@@ -71886,16 +71886,20 @@ var _require = window.require = function(url) {
     if(!/^file:/.test(location.protocol) && xhr.status != 200) {
       throw new Error("require error: http status " + xhr.status);
     }
-    
-    var code = babel.transform(xhr.responseText).code;
+    if(require._options.importFiles) {
+      var code = babel.transform(xhr.responseText, {sourceMaps: "both", filename: fullpath.replace(/\.(\w+)$/, '.raw.$1')}).code;
+    } else {
+      var code = babel.transform(xhr.responseText).code;
+    }
     maker.register(maker.resolve(fullpath), new Function("module, exports, require",code));
     return maker(fullpath);
   }
 };
 
-require._options = { path: ""};
+require._options = { path: "", importFiles: true};
 require.config = function(options) {
-  require._options = options;
+  require._options.path = options.path || "";
+  require._options.importFiles = options.importFiles || true;
 };
 
 require.getFullPath = function(name) {
